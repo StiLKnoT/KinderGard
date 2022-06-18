@@ -73,6 +73,11 @@
     background-color: antiquewhite;
 }
 
+.mapLocation{
+    padding: 3rem;
+    padding-left: 0;
+}
+
 /*** Heading ***/
 h1,
 h2,
@@ -577,7 +582,6 @@ h6,
         justify-content: space-around;
     }
     #characterDiv{
-        /* margin: 0px 20px; */
         width: 18%;
     }
     .booksImg{
@@ -616,6 +620,14 @@ h6,
     #characterDiv{
         width: 22%;
         height: auto;
+    }
+    #contactBlock{
+        padding: 1.5rem !important;
+        padding-bottom: 0px !important;
+    }
+    .mapLocation{
+        width: 100%;
+        padding: 1.5rem;
     }
     
    
