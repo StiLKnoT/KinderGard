@@ -8,8 +8,8 @@ searchVideoBar.addEventListener('keyup', (e) => {
     const filteredVideos = hpVideos.filter((video) => {
         return (
             video.name.toLowerCase().includes(searchString) 
-            // ||
-            // video.house.toLowerCase().includes(searchString)
+            ||
+            video.text.toLowerCase().includes(searchString)
         );
     });
     displayVideos(filteredVideos);
@@ -42,3 +42,10 @@ const displayVideos = (videos) => {
 };
 
 loadVideos();
+
+
+const videoPl = document.querySelector('.videoPl')
+function videoBlock(){
+    videoPl.style.display = "none";
+}
+searchVideoBar.addEventListener('keyup', videoBlock)

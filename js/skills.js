@@ -8,8 +8,8 @@ searchVideoBar.addEventListener('keyup', (e) => {
     const filteredVideos = hpVideos.filter((skills) => {
         return (
             skills.name.toLowerCase().includes(searchString) 
-            // ||
-            // video.house.toLowerCase().includes(searchString)
+            ||
+            skills.text.toLowerCase().includes(searchString)
         );
     });
     displayVideos(filteredVideos);
@@ -42,3 +42,13 @@ const displayVideos = (videos) => {
 };
 
 loadVideos();
+
+const videoPl = document.querySelector('.videoPl')
+function videoBlock(){
+    videoPl.style.display = "none";
+}
+searchVideoBar.addEventListener('keyup', videoBlock)
+// function VideoOpen(){
+//     videoPl.style.display = "block";
+// }
+// searchVideoBar.addEventListener('keydown', VideoOpen)
