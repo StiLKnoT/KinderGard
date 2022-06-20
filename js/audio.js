@@ -33,7 +33,7 @@ const displayAudios = (audio) => {
                 <h2>${audio.name}</h2>
                 <p>Yozuvchi: ${audio.author}</p>
                 </div>
-                <img src="${audio.image}"></img>
+                <img class="audioImg" src="${audio.image}"></img>
                 <audio controls src="${audio.link}" style="width: 90%; height: 30px"></audio>
                 <a href="${audio.link}">Yuklab olish</a>
                 
