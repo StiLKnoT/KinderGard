@@ -3,10 +3,10 @@ const block = document.querySelector('#Block')
 const OpenText = document.querySelector('.OpenText')
 
 function open(){
-    OpenText.style.display = "block";
+    OpenText.setAttribute("class","OpenTextClick")
 }
 function close(){
-    block.style.display = "none";
+    block.setAttribute("class", "newCloseBtn")
 }
 
 button.addEventListener('click', open);
