@@ -1,16 +1,19 @@
 const button = document.querySelector('#closeBtn')
 const block = document.querySelector('#Block')
 const OpenText = document.querySelector('.OpenText')
+const charts = document.querySelector('.charts')
 
 function open(){
     OpenText.setAttribute("class","OpenTextClick")
 }
 function close(){
     block.setAttribute("class", "newCloseBtn")
+    charts.setAttribute("class", "setCharts")
 }
 
 button.addEventListener('click', open);
 button.addEventListener('click', close);
+
 
 
 

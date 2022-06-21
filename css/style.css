@@ -275,11 +275,19 @@ h6,
 }
 
 /* Charts */
+.chartsBlock{
+    transition: all 2s ease-in-out;
+}
 .charts{
+    position: absolute;
+    top: -100%;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+.setCharts{
+    display: flex;
 }
 .OpenTextClick{
     display: block;
@@ -290,7 +298,12 @@ h6,
     background-color: antiquewhite;
     transform: scale3d(1.1, 1.1, 1.1);
     transition: 0.8s ease-in-out;
+    border-radius: 80%;
 
+}
+.OpenText{
+    position: absolute;
+    top: -100%;
 }
 .newCloseBtn{
     display: none;
